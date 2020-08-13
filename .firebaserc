@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jusaidfotos": {
+      "hosting": {
+        "jusaid": [
+          "jusaidfotos"
+        ]
+      }
+    }
+  }
+}
