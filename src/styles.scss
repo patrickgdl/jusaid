@@ -1,1 +1,36 @@
-@import 'assets/scss/normalize';
+@import "assets/scss/normalize";
+
+:root {
+  --font: "Montserrat", sans-serif;
+  --primary: #000;
+  --primary-light: lighten(var(--primary), 40%);
+}
+
+body {
+  color: var(--primary);
+  font-family: var(--font);
+  font-size: 16px;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary);
+  cursor: pointer;
+  outline: 0 none;
+  text-decoration: none;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.5rem; // 24px
+}
+
+h6 {
+  font-size: 1.125rem; // 18px
+}
