@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DialogService } from './../dialog/dialog.service';
+import { MenuComponent } from './menu/menu.component';
+
 @Component({
   selector: 'ju-sidebar',
   template: `
     <svg
+      (click)="openMenu()"
       width="24"
       height="8"
       viewBox="0 0 24 8"
@@ -74,7 +78,17 @@ export class SidebarComponent implements OnInit {
     { name: 'Viagens', route: 'travels' },
   ];
 
-  constructor() {}
+  constructor(private dialog: DialogService) {}
 
   ngOnInit(): void {}
+
+  openMenu(): void {
+    const ref = this.dialog.open(MenuComponent, {
+      data: { message: 'I am a dynamic component inside of a dialog!' },
+    });
+
+    ref.afterClosed.subscribe((result) => {
+      console.log('Dialog closed', result);
+    });
+  }
 }

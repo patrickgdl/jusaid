@@ -32,10 +32,11 @@
               "@firebase/firestore",
               "@firebase/app",
               "@firebase/util",
-              "firebase/app",
-              "firebase",
+              "@firebase/auth",
               "@firebase/component",
-              "@firebase/functions"
+              "@firebase/functions",
+              "firebase/app",
+              "firebase"
             ]
           },
           "configurations": {
