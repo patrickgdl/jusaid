@@ -16,7 +16,7 @@ import { InsertionDirective } from './insertion.directive';
 @Component({
   selector: 'ju-dialog',
   template: `
-    <div class="overlay" (click)="onOverlayClicked($event)">
+    <div class="overlay two" (click)="onOverlayClicked($event)">
       <div class="dialog" (click)="onDialogClicked($event)">
         <ng-template juInsertion> </ng-template>
       </div>
@@ -25,14 +25,13 @@ import { InsertionDirective } from './insertion.directive';
   styleUrls: ['./dialog.component.scss'],
 })
 export class DialogComponent implements AfterViewInit, OnDestroy {
-  componentRef: ComponentRef<any>;
-
   @ViewChild(InsertionDirective) insertionPoint: InsertionDirective;
 
   // tslint:disable-next-line: variable-name
   private readonly _onClose = new Subject<any>();
   public onClose = this._onClose.asObservable();
 
+  componentRef: ComponentRef<any>;
   childComponentType: Type<any>;
 
   constructor(
