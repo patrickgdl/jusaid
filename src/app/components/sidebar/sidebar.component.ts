@@ -6,22 +6,21 @@ import { MenuComponent } from './menu/menu.component';
 @Component({
   selector: 'ju-sidebar',
   template: `
-    <svg
-      (click)="openMenu()"
-      width="24"
-      height="8"
-      viewBox="0 0 24 8"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        id="menu"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M24 0H0V2H24V0ZM24 6H12V8H24V6Z"
-        fill="#191919"
-      />
-    </svg>
+    <button class="svg-wrapper" (click)="openMenu()">
+      <svg
+        width="24"
+        height="8"
+        viewBox="0 0 24 8"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          id="menu"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M24 0H0V2H24V0ZM24 6H12V8H24V6Z"
+        />
+      </svg>
+    </button>
     <nav>
       <ul class="nav-list" role="navigation" aria-label="Menu principal">
         <li class="nav-item" *ngFor="let item of sidebarItems">
@@ -38,10 +37,17 @@ import { MenuComponent } from './menu/menu.component';
   `,
   styles: [
     `
-      svg {
-        float: right;
+      .svg-wrapper {
+        -webkit-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
         padding-right: 50px;
         padding-top: 50px;
+        opacity: 0.5;
+        float: right;
+      }
+
+      .svg-wrapper:hover {
+        opacity: 1;
       }
 
       nav {
@@ -50,9 +56,6 @@ import { MenuComponent } from './menu/menu.component';
         align-items: center;
         width: 100%;
         height: calc(100vh - 70px);
-      }
-
-      .nav-list {
       }
 
       .nav-item {

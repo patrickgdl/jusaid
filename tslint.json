@@ -33,6 +33,7 @@
       true,
       "rxjs/Rx"
     ],
+    "trailing-comma": false,
     "import-spacing": true,
     "indent": {
       "options": [

@@ -4,6 +4,7 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { SidebarModule } from './../components/sidebar/sidebar.module';
@@ -12,6 +13,7 @@ import { SidebarModule } from './../components/sidebar/sidebar.module';
   imports: [CommonModule],
   exports: [
     BrowserModule,
+    BrowserAnimationsModule,
     ScullyLibModule,
     AngularFirestoreModule,
     AngularFireAnalyticsModule,

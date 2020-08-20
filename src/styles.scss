@@ -2,7 +2,7 @@
 
 :root {
   --font: "Montserrat", sans-serif;
-  --primary: #000;
+  --primary: #191919;
   --primary-light: lighten(var(--primary), 40%);
 }
 
@@ -19,11 +19,25 @@ ul {
   padding: 0;
 }
 
+button,
+fieldset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 a {
   color: var(--primary);
-  cursor: pointer;
   outline: 0 none;
-  text-decoration: none;
 }
 
 h5 {
