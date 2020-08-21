@@ -6,37 +6,34 @@ import { DialogRef } from './../../dialog/dialog-ref';
 @Component({
   selector: 'ju-menu',
   template: `
-    <div class="text-wrapper">
-      <p>{{ config.data.message }}</p>
-    </div>
-    <div class="actions">
-      <button class="button" (click)="onClose()">CANCEL</button>
-      <button class="button" (click)="onClose()">OK</button>
+    <div class="parent">
+      <div class="div1">
+        <h1>First PART</h1>
+      </div>
+      <div class="div2">
+        <h1>Second PART</h1>
+      </div>
     </div>
   `,
   styles: [
     `
-      :host {
-        border: 2px #382ecc solid;
-        font-size: 16px;
-        color: #382ecc;
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+      }
+
+      .div1 {
         display: flex;
         flex-direction: column;
-        flex: 1;
-      }
-
-      .text-wrapper {
-        display: flex;
-        flex: 1;
-        align-content: center;
+        align-items: center;
         justify-content: center;
-        text-align: center;
+        grid-area: 1 / 1 / 2 / 2;
       }
-
-      .actions {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+      .div2 {
+        grid-area: 1 / 2 / 2 / 3;
       }
     `,
   ],
