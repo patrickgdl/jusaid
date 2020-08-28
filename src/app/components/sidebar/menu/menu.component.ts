@@ -17,14 +17,16 @@ import { DialogRef } from './../../dialog/dialog-ref';
         </ul>
       </nav>
       <div class="contact">
-        <p class="contact-subtitle">Para orçamento, por favor, contate:</p>
-        <h3>juh_said@hotmail.com</h3>
-        <h3>(41) 99648-9079</h3>
-        <p class="contact-subtitle">Conectar:</p>
-        <label class="contact-connect">
-          <a href=""> Instagram </a>
-          <a href=""> VSCO </a>
-        </label>
+        <div class="contact-container">
+          <p class="contact-subtitle">Para orçamento, por favor, contate:</p>
+          <h3>juh_said@hotmail.com</h3>
+          <h3>(41) 99648-9079</h3>
+          <p class="contact-subtitle">Conectar:</p>
+          <label class="contact-connect">
+            <a href=""> Instagram </a>
+            <a href=""> VSCO </a>
+          </label>
+        </div>
       </div>
     </div>
   `,

@@ -1,7 +1,9 @@
-@import "assets/scss/normalize";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 :root {
-  --font: "Montserrat", sans-serif;
+  --font: 'Montserrat', sans-serif;
   --primary: #191919;
   --primary-light: lighten(var(--primary), 40%);
 }
