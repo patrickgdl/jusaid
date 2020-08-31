@@ -147,5 +147,12 @@
       }
     }
   },
-  "defaultProject": "jusaid"
+  "defaultProject": "jusaid",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "changeDetection": "OnPush"
+      }
+    }
+  }
 }
