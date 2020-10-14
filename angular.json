@@ -154,5 +154,8 @@
         "changeDetection": "OnPush"
       }
     }
+  },
+  "cli": {
+    "analytics": "9ac7659f-cf32-4232-b8c5-3031c2f720a0"
   }
 }

@@ -4,7 +4,7 @@ import { Component, OnInit, ChangeDetectionStrategy, EventEmitter, Output } from
   selector: 'ju-dialog-container',
   template: `
     <div
-      class=" relative dialog bg-white h-screen w-screen flex flex-col p-5 sm:p-6"
+      class="relative dialog bg-white h-screen w-screen flex flex-col p-5 sm:p-6"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-headline"
