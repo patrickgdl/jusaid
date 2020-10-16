@@ -37,6 +37,10 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: 0;
+}
+
 a {
   color: var(--primary);
   outline: 0 none;
