@@ -3,25 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'ju-portraits',
   template: `
-    <div class="grid grid-cols-5 gap-y-0 gap-x-1 h-screen">
-      <div style="grid-area: 1 / 1 / 2 / 3;">
-        <div class="absolute left- top-">
-          <ju-logo></ju-logo>
-        </div>
+    <div class="flex flex-wrap">
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5">
+        <ju-logo></ju-logo>
       </div>
 
-      <div style="grid-area: 1 / 3 / 2 / 6; background: url('assets/img/people.png') center/cover no-repeat"></div>
+      <div class="sm:w-full md:w-full lg:w-3/5 xl:w-3/5">
+        <div class="h-screen" style="background: url('assets/img/people.png') center/cover no-repeat"></div>
+      </div>
     </div>
-  `,
-  styles: [
-    `
-      .logo {
-        position: absolute;
-        left: 40px;
-        top: 80px;
-      }
-    `,
-  ],
+  `
 })
 export class PortraitsComponent implements OnInit {
   constructor() {}
