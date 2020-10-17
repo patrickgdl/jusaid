@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        almost: 'calc(100vh - 88px)',
+        almost: 'calc(100vh - 200px)',
       },
       animation: {
         'bounce-right': 'bounceRight 2s infinite',

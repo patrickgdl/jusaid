@@ -186,13 +186,13 @@ export class LogoComponent implements OnInit, AfterViewInit {
     const tl = gsap.timeline({ defaults: { ease: 'none' } });
 
     tl.set(canvasElement, { autoAlpha: 1 })
-      .to(this.maskJ.nativeElement, { duration: 0.55, drawSVG: true })
-      .to(this.maskU.nativeElement, { duration: 0.45, drawSVG: true })
-      .to(this.maskS.nativeElement, { duration: 0.55, drawSVG: true })
-      .to(this.maskA.nativeElement, { duration: 0.45, drawSVG: true })
-      .to(this.maskILine.nativeElement, { duration: 0.45, drawSVG: true })
-      .to(this.maskDFront.nativeElement, { duration: 0.45, drawSVG: true })
-      .to(this.maskDBack.nativeElement, { duration: 0.55, drawSVG: true })
-      .to(this.maskIDot.nativeElement, { duration: 1.5, drawSVG: true });
+      .to(this.maskJ.nativeElement, { duration: 0.4, drawSVG: true })
+      .to(this.maskU.nativeElement, { duration: 0.3, drawSVG: true })
+      .to(this.maskS.nativeElement, { duration: 0.4, drawSVG: true })
+      .to(this.maskA.nativeElement, { duration: 0.3, drawSVG: true })
+      .to(this.maskILine.nativeElement, { duration: 0.3, drawSVG: true })
+      .to(this.maskDFront.nativeElement, { duration: 0.3, drawSVG: true })
+      .to(this.maskDBack.nativeElement, { duration: 0.4, drawSVG: true })
+      .to(this.maskIDot.nativeElement, { duration: 1, drawSVG: true });
   }
 }
