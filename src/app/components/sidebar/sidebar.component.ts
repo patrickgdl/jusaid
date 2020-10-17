@@ -6,27 +6,25 @@ import { MenuComponent } from './menu/menu.component';
 @Component({
   selector: 'ju-sidebar',
   template: `
-    <div class="flex items-end justify-end mt-8">
-      <div class="flex items-end">
+    <div class="flex items-end justify-end mt-10 mr-10">
+      <div class="cursor-pointer" (click)="openMenu()">
         <svg width="24" height="8" viewBox="0 0 24 8" xmlns="http://www.w3.org/2000/svg">
           <path id="menu" fill-rule="evenodd" clip-rule="evenodd" d="M24 0H0V2H24V0ZM24 6H12V8H24V6Z" />
         </svg>
-
-        <span class="text-white text-2xl mx-2 font-semibold">Menu</span>
       </div>
     </div>
 
-    <nav class="flex items-end justify-end w-full mt-10">
+    <nav class="flex items-center justify-center text-right w-full mt-10 mr-10 h-almost">
       <ul role="navigation" aria-label="Menu principal">
-        <li *ngFor="let item of sidebarItems">
-          <a class="font-normal hover:font-bold" routerLinkActive="font-black" [routerLink]="[item.route]">
+        <li class="my-24" *ngFor="let item of sidebarItems ">
+          <a routerLinkActive="active" [routerLink]="[item.route]" class="text-lg font-normal hover:font-bold text-black text-opacity-50">
             <span class="nav-label">{{ item.name }}</span>
           </a>
         </li>
       </ul>
     </nav>
   `,
-  styles: [``],
+  styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit {
   sidebarItems = [

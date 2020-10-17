@@ -27,6 +27,7 @@
     "@scullyio/ng-lib": "^1.0.0-beta.0",
     "@scullyio/scully": "^1.0.0-beta.0",
     "firebase": "^7.13.1",
+    "gsap": "file:gsap-bonus.tgz",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -37,6 +38,7 @@
     "@angular-devkit/build-angular": "~0.1000.6",
     "@angular/cli": "~10.0.4",
     "@angular/compiler-cli": "~10.0.5",
+    "@types/gsap": "^1.20.2",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
