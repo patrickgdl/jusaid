@@ -10,15 +10,11 @@
 <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>https://www.jusaid.com/portraits</loc>
+<loc>https://www.jusaid.com/work</loc>
 <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>https://www.jusaid.com/travels</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>https://www.jusaid.com/natures</loc>
+<loc>https://www.jusaid.com/contact</loc>
 <changefreq>monthly</changefreq>
 </url>
 </urlset>

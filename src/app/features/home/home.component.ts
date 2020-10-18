@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ju-portraits',
+  selector: 'ju-home',
   template: `
     <div class="flex flex-wrap">
       <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5">
@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
     </div>
   `,
 })
-export class PortraitsComponent implements OnInit {
+export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}

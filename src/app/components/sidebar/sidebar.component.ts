@@ -28,9 +28,9 @@ import { MenuComponent } from './menu/menu.component';
 })
 export class SidebarComponent implements OnInit {
   sidebarItems = [
-    { name: 'Natureza', route: 'nature' },
-    { name: 'Retratos', route: 'portraits' },
-    { name: 'Viagens', route: 'travels' },
+    { name: 'Bio', route: 'about' },
+    { name: 'Retratos', route: 'home' },
+    { name: 'Trabalhos', route: 'work' },
   ];
 
   constructor(private dialog: DialogService) {}

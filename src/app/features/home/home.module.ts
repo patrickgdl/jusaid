@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { DialogModule } from '../../components/dialog/dialog.module';
 import { LogoModule } from './../../components/logo/logo.module';
-import { PortraitsRoutingModule } from './portraits-routing.module';
-import { PortraitsComponent } from './portraits.component';
+import { HomeRoutingModule } from './home-routing.module';
+import { HomeComponent } from './home.component';
 import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
-  declarations: [PortraitsComponent, HeroComponent],
-  imports: [CommonModule, PortraitsRoutingModule, DialogModule, LogoModule],
+  declarations: [HomeComponent, HeroComponent],
+  imports: [CommonModule, HomeRoutingModule, DialogModule, LogoModule],
 })
-export class PortraitsModule {}
+export class HomeModule {}
