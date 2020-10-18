@@ -192,7 +192,7 @@ export class LogoComponent implements OnInit, AfterViewInit {
       .to(this.maskA.nativeElement, { duration: 0.3, drawSVG: true })
       .to(this.maskILine.nativeElement, { duration: 0.3, drawSVG: true })
       .to(this.maskDFront.nativeElement, { duration: 0.3, drawSVG: true })
-      .to(this.maskDBack.nativeElement, { duration: 0.4, drawSVG: true })
+      .to(this.maskDBack.nativeElement, { duration: 0.3, drawSVG: true })
       .to(this.maskIDot.nativeElement, { duration: 1, drawSVG: true });
   }
 }

@@ -14,10 +14,10 @@ import { MenuComponent } from './menu/menu.component';
       </div>
     </div> -->
 
-    <nav class="flex items-center justify-center text-right w-full h-full">
+    <nav class="flex items-center justify-center text-right w-full h-screen">
       <ul role="navigation" aria-label="Menu principal">
         <li class="my-24" *ngFor="let item of sidebarItems ">
-          <a routerLinkActive="active" [routerLink]="[item.route]" class="text-lg font-normal hover:font-bold text-black text-opacity-50">
+          <a routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}" [routerLink]="[item.route]" class="text-lg font-normal hover:font-bold text-black text-opacity-50">
             <span class="nav-label">{{ item.name }}</span>
           </a>
         </li>
@@ -29,7 +29,7 @@ import { MenuComponent } from './menu/menu.component';
 export class SidebarComponent implements OnInit {
   sidebarItems = [
     { name: 'Bio', route: 'about' },
-    { name: 'Retratos', route: 'home' },
+    { name: 'Retratos', route: './' },
     { name: 'Trabalhos', route: 'work' },
   ];
 
